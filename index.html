@@ -3,101 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore the World</title>
+    <title>Unique Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn gray" onclick="clearEntry()">C</button>
+            <button class="btn gray" onclick="clearAll()">AC</button>
+            <button class="btn orange" onclick="appendToDisplay('%')">%</button>
+            <button class="btn orange" onclick="appendToDisplay('/')">/</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn orange" onclick="appendToDisplay('*')">*</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn orange" onclick="appendToDisplay('+')">+</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn orange" onclick="appendToDisplay('-')">-</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+            <button class="btn" onclick="appendToDisplay('.')">.</button>
+            <button class="btn" onclick="appendToDisplay('0')" style="width: 100%;">0</button>
         </div>
-        <header>
-            <h1>Welcome to Explore the World</h1>
-        </header>
-        <main>
-            <section id="about">
-                <h2>About Us</h2>
-                <p>Explore the World is your go-to travel agency for unforgettable journeys. We offer customized travel packages, guided tours, and exclusive deals to make your travel dreams come true.</p>
-            </section>
-            <section id="services">
-                <h2>Our Services</h2>
-                <div class="columns">
-                    <div class="column">
-                        <h3>Customized Packages</h3>
-                        <p>Tailored travel experiences to suit your preferences and budget.</p>
-                    </div>
-                    <div class="column">
-                        <h3>Guided Tours</h3>
-                        <p>Expert-guided tours to explore the best destinations.</p>
-                    </div>
-                    <div class="column">
-                        <h3>Exclusive Deals</h3>
-                        <p>Special offers and discounts on travel packages.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="destinations">
-                <h2>Popular Destinations</h2>
-                <div class="columns">
-                    <div class="column">
-                        <h3>Paris</h3>
-                        <img src="images/paris-city.jpg" alt="Paris">
-                        <p>The city of lights and romance.</p>
-                    </div>
-                    <div class="column">
-                        <h3>Bali</h3>
-                        <img src="images/bali.jpg" alt="Bali">
-                        <p>Tropical paradise with stunning beaches.</p>
-                    </div>
-                    <div class="column">
-                        <h3>New York</h3>
-                        <img src="images/newyork.jpeg" alt="New York">
-                        <p>The city that never sleeps.</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="testimonials">
-                <h2>Customer Testimonials</h2>
-                <div class="columns">
-                    <div class="column">
-                        <p>"Explore the World made our honeymoon unforgettable. The customized package was perfect!" - Sarah & John</p>
-                    </div>
-                    <div class="column">
-                        <p>"The guided tour of Paris was amazing. Our guide was knowledgeable and friendly." - Emily</p>
-                    </div>
-                    <div class="column">
-                        <p>"Great deals and excellent service. Highly recommend!" - Michael</p>
-                    </div>
-                </div>
-            </section>
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 Explore the World. All rights reserved.</p>
-        </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
-        
 
-        
+
+
