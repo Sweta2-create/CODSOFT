@@ -1,117 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <div class="main">
         <div class="navbar">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">PROJECT</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <header id="home">
-        <div class="home-container">
-            <h3>Hello, I'm <span>Sweta</span>.</h3>
-            <h1><span>W</span>EB <span>D</span>EVELOPER</h1>
-            <h3>This is my official websites to show<br> all my work and details exprience of<br> web development. </h3>
-            <a href="#">Hire Me</a>
-            <a href="pdf/resume.pdf" target="_blank">Download Resume (PDF)</a>
-        </div>
+        <header>
+            <h1>Welcome to Explore the World</h1>
         </header>
-        
-        <div class="image">
-            <img src="images/my_pic1.png" class="my_pic1">
-        </div>
-
-        <div class="icons"> 
-            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-        </div>
+        <main>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Explore the World is your go-to travel agency for unforgettable journeys. We offer customized travel packages, guided tours, and exclusive deals to make your travel dreams come true.</p>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <div class="columns">
+                    <div class="column">
+                        <h3>Customized Packages</h3>
+                        <p>Tailored travel experiences to suit your preferences and budget.</p>
+                    </div>
+                    <div class="column">
+                        <h3>Guided Tours</h3>
+                        <p>Expert-guided tours to explore the best destinations.</p>
+                    </div>
+                    <div class="column">
+                        <h3>Exclusive Deals</h3>
+                        <p>Special offers and discounts on travel packages.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="destinations">
+                <h2>Popular Destinations</h2>
+                <div class="columns">
+                    <div class="column">
+                        <h3>Paris</h3>
+                        <img src="images/paris-city.jpg" alt="Paris">
+                        <p>The city of lights and romance.</p>
+                    </div>
+                    <div class="column">
+                        <h3>Bali</h3>
+                        <img src="images/bali.jpg" alt="Bali">
+                        <p>Tropical paradise with stunning beaches.</p>
+                    </div>
+                    <div class="column">
+                        <h3>New York</h3>
+                        <img src="images/newyork.jpeg" alt="New York">
+                        <p>The city that never sleeps.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="testimonials">
+                <h2>Customer Testimonials</h2>
+                <div class="columns">
+                    <div class="column">
+                        <p>"Explore the World made our honeymoon unforgettable. The customized package was perfect!" - Sarah & John</p>
+                    </div>
+                    <div class="column">
+                        <p>"The guided tour of Paris was amazing. Our guide was knowledgeable and friendly." - Emily</p>
+                    </div>
+                    <div class="column">
+                        <p>"Great deals and excellent service. Highly recommend!" - Michael</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Explore the World. All rights reserved.</p>
+        </footer>
     </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
-    <section id="about">
-        <div class="about-img">
-            <img src="images/my_pic1.png" alt="">
-        </div>
-        <div class="about-container">
-            <h2 class="heading">About <span> Me</span></h2>
-            <p>My name is Sweta, and i am current looking for a job in web developer. I have
-            3 years of exprience working as a web developer. I have a bachelor's degree in 
-            Computer Science. People find me to be an upbeat, self-motivated team player with
-            excellent communication skills.
-        
-            I am a dedicated person with a family of five and i enjoy reading. My skills 
-            include designing user-friendly interfaces, optimizing website performance,
-            and ensuring cross-browser compactibility.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="skills-container">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Responsive Design</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="projects-container">
-            <h2 class="projects-heading">Projects</h2>
-            <div class="project-item-1">
-                <h3>Responsive Personal Blog</h3>
-                <p>Developed a responsive personal blog to share articles, tutorials, and insights about web development. The blog features a user-friendly interface with a clean, modern design, optimized for performance, and compatible across various browsers. Technologies used: HTML5, CSS3, JavaScript, and Responsive Design principles.</p>
-                <img src="images/personal-blog.jpg" alt="Responsive Personal Blog">
-            </div>
-            <div class="project-item-2">
-                <h3>E-commerce Website Redesign</h3>
-                <p>Redesigned an existing e-commerce website to improve user experience and performance. Implemented a modern UI/UX design, enhanced navigation, and optimized loading times. Technologies used: HTML5, CSS3, JavaScript, Bootstrap, and Performance Optimization techniques.</p>
-                <img src="images/e-commerce-website.jpg" alt="E-commerce Website Redesign">
-            </div>
-        </div>
-    </section>
-    
-    
-    <section id="resume">
-        <div class="resume-container">
-            <h2>Resume</h2>
-            <p><a href="pdf/resume.pdf" target="_blank">Download Resume (PDF)</a></p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <div class="contact-container">
-            <h2>Contact</h2>
-            <ul>
-                <li>Email: swetakumari272000@gmail.com</li>
-                <li>Phone: +91 8583022186</li>
-            </ul>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer-container">
-            <div class="footer-icons"> 
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-            </div>
-            <p>&copy; 2024 Sweta Kumari. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    
-    
 </body>
 </html>
+
+        
+
+        
